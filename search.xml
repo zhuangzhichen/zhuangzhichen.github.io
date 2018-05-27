@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[开篇记：我为什么想写博客]]></title>
+    <url>%2F2018%2F05%2F27%2F%E5%BC%80%E7%AF%87%E8%AE%B0%EF%BC%9A%E6%88%91%E4%B8%BA%E4%BB%80%E4%B9%88%E6%83%B3%E5%86%99%E5%8D%9A%E5%AE%A2%2F</url>
+    <content type="text"><![CDATA[很多东西，你以为你懂了，当你讲出来的时候，却发现有点困难，当你写下来的时候，却发现无从下手，所以你真的懂了吗？ &emsp;&emsp;我为什么想写博客？当学生那么多年以来，我发现学习最有效的方式之一就是将学到东西通过自己的理解再表达出来（为什么是之一？因为还有一个最有效的方式就是不断地用它）。当下而言，动机无非有这几点: 1.知识管理与深化学习&emsp;&emsp;其实最大的初衷很简单，也许和大部分人一样，通过写下自己学到的东西和对事物的理解感悟来进行知识管理，这同时也是自我整理的一个过程。互联网时代的信息太零散了，我们每天接收着比以往任何时候都多的信息，并且有相当一部分人将其看做知识，但真正有价值的知识应该是系统的，有条理的。网上每一次的搜索可以看成是一次信息的获取，但是将其整理成有条理的，系统的，可以被称为知识的东西才是学习最重要的环节。所以，我又将其定位为深化学习的工具，寄希望能极大地提高学习成效。要实现这一点，需要良好的习惯和强大的自律能力。所以，这也算一次极大的挑战。 2.输出的快乐与输入的危机&emsp;&emsp;在我决定建博客之前，已经在自己的公众号上创作了三篇文章，并发现将自己的想法和最近的学习成果写成文分享给他人是一种能获得持续快感的行为（原谅我这么描述），尤其是当很多人点赞或是讨论你文章的时候。与此对应的，一次次的输出将消耗知识储备，最终将无文可写，这种输入危机将鞭策我去获得更多的知识、经历，或者这里称为谈资更合适。这种过程，痛并快乐。 3.互联网，世界很小，别让生活太无趣&emsp;&emsp;比起公众号，博客也许是更网站化和开放的东西，在我看来更符合一般互联网的定义（也许是因为在此之前我的公众号从没有主动推广过，只在朋友圈分享文章）。此外，博客更适合写长文章和技术向的文章，更适合通过电脑端浏览，互动性更高。世界很小，通过博客能更好地结识五湖四海志同道合的朋友。一个人默默地学习工作太过无趣，而一群人的讨论和思想碰撞也许就是狂欢了。 写在最后为了完整领悟博客的精髓，我花了7个小时从0开始在github上搭建了个人主页，并希望在日后能不断完善网站，形成自己想要的风格。关于这部分的具体内容，我也会陆续发布在博客上。 放在博客上的文章将以技术向为主，主要记录学习经历，并夹杂自己的理解和感悟，力求叙事清晰明白，逻辑性强，期望与君共享。 最后推广一下我的主页&emsp;以及公众号：czz_desk&emsp;，哈哈哈 感谢阅读！]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[Hello World]]></title>
     <url>%2F2018%2F05%2F26%2Fhello-world%2F</url>
     <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
