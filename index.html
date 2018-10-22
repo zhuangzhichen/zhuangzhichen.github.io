@@ -338,6 +338,172 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://zhuangzhichen.github.io/2018/10/22/Python基础随摘/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="czz">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/czz.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Zhuangzhi Chen">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/10/22/Python基础随摘/" itemprop="url">
+                  Python笔记随摘
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-10-22 19:22:37 / 修改时间：19:30:31" itemprop="dateCreated datePublished" datetime="2018-10-22T19:22:37+08:00">2018-10-22</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/10/22/Python基础随摘/" class="leancloud_visitors" data-flag-title="Python笔记随摘">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数：</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><strong>注</strong>：这是笔者当时学习Python基础的时候有几点觉得<strong>有意思</strong>或是<strong>掌握不到位</strong>的地方，因此摘录。<br>参考资料：<a href="https://github.com/lijin-THU/notes-python" target="_blank" rel="noopener">中文Python笔记</a></p>
+<h3 id="1-python之禅"><a href="#1-python之禅" class="headerlink" title="1. python之禅"></a>1. python之禅</h3><p>反映了python优雅、简洁、明确的设计哲学的一首诗。自带于python解释器中。输入:<br><code>import this</code><br>将出现:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">The Zen of Python, by Tim Peters</span><br><span class="line"></span><br><span class="line">Beautiful is better than ugly.</span><br><span class="line">Explicit is better than implicit.</span><br><span class="line">Simple is better than complex.</span><br><span class="line">Complex is better than complicated.</span><br><span class="line">Flat is better than nested.</span><br><span class="line">Sparse is better than dense.</span><br><span class="line">Readability counts.</span><br><span class="line">Special cases aren&apos;t special enough to break the rules.</span><br><span class="line">Although practicality beats purity.</span><br><span class="line">Errors should never pass silently.</span><br><span class="line">Unless explicitly silenced.</span><br><span class="line">In the face of ambiguity, refuse the temptation to guess.</span><br><span class="line">There should be one-- and preferably only one --obvious way to do it.</span><br><span class="line">Although that way may not be obvious at first unless you&apos;re Dutch.</span><br><span class="line">Now is better than never.</span><br><span class="line">Although never is often better than *right* now.</span><br><span class="line">If the implementation is hard to explain, it&apos;s a bad idea.</span><br><span class="line">If the implementation is easy to explain, it may be a good idea.</span><br><span class="line">Namespaces are one honking great idea -- let&apos;s do more of those!</span><br></pre></td></tr></table></figure></p>
+<p>自行体会~</p>
+<h3 id="2-ipython与magic命令”-”"><a href="#2-ipython与magic命令”-”" class="headerlink" title="2. ipython与magic命令”%”"></a>2. ipython与magic命令”%”</h3><p>ipython是一个命令行下可交互的解释器。它提供了%开头的magic命令。使用这些命令可以方便地对当前工作空间进行操作，类似于linux的命令行命令。<br>查看magic命令：<code>%lsmagic</code><br>列举一些很有用的magic命令:<br>查看当前空间变量：<code>%whos</code><br>重置当前空间变量：<code>%reset -f</code><br>查看当前工作文件夹：<code>%pwd</code><br>新建文件夹：<code>%mkdir demo_test</code><br>改变路径/返回上层：<code>cd demo_test</code> <code>cd ..</code><br>将当前cell内容写入文件：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">%%writefile demo.py</span><br><span class="line">xxx...(代码)</span><br></pre></td></tr></table></figure></p>
+<p>查看当前文件夹文件：<code>%ls</code><br>用run命令运行某代码：<code>%run xxx.py</code><br>删除某文件：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">import os </span><br><span class="line">os.remove(&apos;xxx.py&apos;)</span><br></pre></td></tr></table></figure></p>
+<p>删除文件夹：<code>%rmdir demo</code><br>查看历史命令：<code>%hist</code><br>命令计时（可以测计算速度）：<code>%timeit xxx</code><br>查看函数使用帮助：<code>xxx?</code>,查看帮助与源代码:<code>xxx??</code><br>用<em>可获得上个cell的输出：`</em> + 13<code>可用！执行一些系统命令，如：</code>!ping baidu.com`<br>注意%与%%的区别，%作用于单行，%%作用于整个cell</p>
+<h3 id="3-关于元组tuple"><a href="#3-关于元组tuple" class="headerlink" title="3. 关于元组tuple"></a>3. 关于元组tuple</h3><p>首先，不同于列表，元组不可变。<br>其仍然可以索引切片。<br><strong>为什么需要元组？</strong><br>旧式字符串格式化中参数要用元组；<br>在字典中当作键值；<br>数据库的返回值……等。<br><strong>相同长度下，元组在各项处理速度上优于或等于列表，尤其是生成速度</strong></p>
+<h3 id="4-关于集合set"><a href="#4-关于集合set" class="headerlink" title="4. 关于集合set"></a>4. 关于集合set</h3><p>集合是一种无序的序列，集合的元素具有<strong>唯一性</strong>，为了确保这种唯一性，集合中放入的元素需要为不可变对象。<br>有一种不可变集合（用frozenset方法），<strong>一旦创建就不可以改变</strong>，它可以用来作为字典的键：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">flight_distance = &#123;&#125;</span><br><span class="line">city_pair = frozenset([&apos;Los Angeles&apos;, &apos;New York&apos;])</span><br><span class="line">flight_distance[city_pair] = 2498</span><br><span class="line">flight_distance[frozenset([&apos;Austin&apos;, &apos;Los Angeles&apos;])] = 1233</span><br><span class="line">flight_distance[frozenset([&apos;Austin&apos;, &apos;New York&apos;])] = 1515</span><br><span class="line">flight_distance</span><br></pre></td></tr></table></figure></p>
+<p>得到字典:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;frozenset(&#123;&apos;Austin&apos;, &apos;New York&apos;&#125;): 1515,</span><br><span class="line"> frozenset(&#123;&apos;Austin&apos;, &apos;Los Angeles&apos;&#125;): 1233,</span><br><span class="line"> frozenset(&#123;&apos;Los Angeles&apos;, &apos;New York&apos;&#125;): 2498&#125;</span><br></pre></td></tr></table></figure></p>
+<p> 集合不分顺序，所以无论是键为{‘Austin’, ‘New York’}还是{‘New York’, ‘Austin’}不影响查询结果。</p>
+<h3 id="5-函数参数、返回与map方法"><a href="#5-函数参数、返回与map方法" class="headerlink" title="5. 函数参数、返回与map方法"></a>5. 函数参数、返回与map方法</h3><p> <strong>参数</strong>：在函数传入参数时，有两种形式值得注意：*args和**kwargs。他们都表示参数数目不定。<br> 其中*args表示可以直接传入多个参数，它相当于元组。实际上，对于这类函数，可以用元组的方式传入参数，只要在代表元组的变量前加*号。<br> **kwargs(key words args)表示必须通过键值对的方式传入多个参数，它相当于字典。对于这类函数，可以用字典的方式传入参数，同样，要加**号。<br> <strong>返回</strong>：函数如果有多个返回值，那么它实际上返回的是<strong>一个元组</strong>。<br> <strong>map方法</strong>：利用map方法，我们可以通过函数来生成序列。可以理解为<strong>将原始序列的所有元素都通过某方法map为目标序列</strong>，如下：<br> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">def sqr(x):</span><br><span class="line">    return x ** 2</span><br><span class="line">a = [2, 3, 4]</span><br><span class="line">b = [i for i in map(sqr, a)]</span><br><span class="line">print (b)</span><br></pre></td></tr></table></figure></p>
+<p>输出：<code>[4, 9, 16]</code><br>值得注意的是，这里的map(xxx)直接打印输出会是一个对象，它是一个<strong>迭代器</strong>（Python3中），需要用一个循环来读取它的内容。</p>
+<h3 id="6-模块与包"><a href="#6-模块与包" class="headerlink" title="6. 模块与包"></a>6. 模块与包</h3><p><strong>模块</strong>：Python会将包含在环境路径中的所有.py文件识别成可导入<strong>模块</strong>，使用<code>import</code>可导入。在导入时，Python会<strong>执行一遍模块中的所有内容</strong>，但它只会执行<strong>一次</strong>，若有修改要想再次导入，需用reload函数。<br>.py文件自带<strong>name</strong>属性，文件<strong>被执行</strong>时，该属性值会变成’__main__‘。  </p>
+<p><strong>包</strong>：包实际上是一个文件夹，文件夹中可以包含一些.py文件，此外还包含一个<code>__init__.py</code>文件，<strong>它说明该文件夹是一个包，它可以是一个空文件，但要存在</strong>。</p>
+<h3 id="7-关于异常"><a href="#7-关于异常" class="headerlink" title="7. 关于异常"></a>7. 关于异常</h3><p>在一般程序句中，发生错误异常将会使程序停止执行，若不希望停止，则使用<code>try</code>的形式。<br><strong>1)try与except</strong>: <code>try</code>块出现异常，其后的代码将被忽略，Python将寻找<code>except</code><strong>后</strong>的异常类型，<strong>找到</strong>则执行此块，<strong>没有</strong>则抛出。如下，<code>ValueError</code>表示异常类型，如果它不匹配<code>try</code>中的异常，将直接抛出而不执行<code>except</code>块：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">try:</span><br><span class="line">    ...</span><br><span class="line">except ValueError:</span><br><span class="line">    ...</span><br></pre></td></tr></table></figure></p>
+<p><strong>2)try与Exception</strong>：<code>Exception</code>用来捕获<strong>所有异常</strong>，其后不需加异常类型。意味着<code>try</code>中所有异常类型都可以激活<code>Exception</code>模块。这相当于直接用<code>except:</code>，一般不推荐这种用法。<br><strong>3)自定义异常</strong>：可以自定义异常，使用<code>raise</code>关键词来抛出异常。</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://zhuangzhichen.github.io/2018/05/27/开篇记：我为什么想写博客/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -538,7 +704,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-count">2</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
